@@ -12,7 +12,7 @@ namespace ConsoleApp1.Module3
         {
             Console.WriteLine("a" == "a"); // True
             Console.WriteLine("a" == "A"); // False
-            Console.WriteLine(1 == 2); 
+            Console.WriteLine(1 == 2); // False
         }
 
     }
