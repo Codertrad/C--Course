@@ -31,7 +31,16 @@ namespace ConsoleApp1
             //StudentGrading.RunStudentApp();
 
             // MODULO 3: EXPRESIONES BOOLEANAS
-            BooleanExpresions.RunBooleanExpresions();
+            //BooleanExpresions.RunBooleanExpresions();
+
+            // MODULO 3: MANEJO DE AMBITO O SCOPE
+            //ScopeVariable.RunScopeVariable();
+
+            // MODULO 3: SWITCH CASE
+            //SwitchCase.RunSwitchCase();
+
+            // MODULO 3: BUCLE FOR
+            IteratorFor.RunIteratorFor();
         }
     }
 }
