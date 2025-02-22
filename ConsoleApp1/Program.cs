@@ -40,7 +40,10 @@ namespace ConsoleApp1
             //SwitchCase.RunSwitchCase();
 
             // MODULO 3: BUCLE FOR
-            IteratorFor.RunIteratorFor();
+            //IteratorFor.RunIteratorFor();
+
+            // MODULO 3: BUCLE WHILE Y DO WHILE
+            IteratorWhile.RunIteratorWhile();
         }
     }
 }
