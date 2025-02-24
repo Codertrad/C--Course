@@ -43,7 +43,10 @@ namespace ConsoleApp1
             //IteratorFor.RunIteratorFor();
 
             // MODULO 3: BUCLE WHILE Y DO WHILE
-            IteratorWhile.RunIteratorWhile();
+            //IteratorWhile.RunIteratorWhile();
+
+            // MODULO 3: PROJECTO DE BUCLES Y CONDICIONALES
+            PetsApp.RunPetsApp();
         }
     }
 }

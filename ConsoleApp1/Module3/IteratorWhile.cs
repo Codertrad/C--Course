@@ -177,7 +177,7 @@ namespace ConsoleApp1.Module3
             do
             {   
                 string? inputRol = Console.ReadLine();
-                rol = inputRol.Trim().ToLower();
+                rol = (inputRol ?? "").Trim().ToLower();
 
                 if (rol != "administrator" && rol != "manager" && rol != "user")
                     Console.WriteLine($"The role name that you entered, \"{inputRol}\" is not valid. Enter your role name (Administrator, Manager, or User)");
