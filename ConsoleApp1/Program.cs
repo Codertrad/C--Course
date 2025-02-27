@@ -2,6 +2,7 @@
 using ConsoleApp1.Module1;
 using ConsoleApp1.Module2;
 using ConsoleApp1.Module3;
+using ConsoleApp1.Module4;
 
 namespace ConsoleApp1
 {
@@ -46,7 +47,25 @@ namespace ConsoleApp1
             //IteratorWhile.RunIteratorWhile();
 
             // MODULO 3: PROJECTO DE BUCLES Y CONDICIONALES
-            PetsApp.RunPetsApp();
+            //PetsApp.RunPetsApp();
+
+            // MODULO 4: TIPOS DE DATOS
+            //IntegralTypes.RunIntegralTypes();
+
+            // MODULO 4: CONVERSION DE TIPOS DE DATOS
+            //ParseTypeData.RunParseTypeData();
+
+            // MODULO 4: METODOS DE ARRAY
+            //ArrayMethods.RunArrayMethods();
+
+            // MODULO 4: EJERCICIOS SOBRE METODOS DE ARR
+            //ExercisesArrMethods.RunExercises();
+
+            // MODULO 4: FORMATO A DATOS ALFANUMERICOS
+            //FormatCharacters.RunFormatNumbers();
+
+            // MODULO 4: METODOS DE CADENA INTEGRADOS
+            StringMethods.RunStringMethods();
         }
     }
 }

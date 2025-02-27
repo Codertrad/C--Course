@@ -25,9 +25,7 @@ namespace ConsoleApp1.Module3
 
             // array used to store runtime data, there is no persisted data
             string[,] ourAnimals = new string[maxPets, 6];
-
-            // TODO: Convert the if-elseif-else construct to a switch statement
-
+                        
             // create some initial ourAnimals array entries
             for (int i = 0; i < maxPets; i++)
             {   
@@ -84,7 +82,7 @@ namespace ConsoleApp1.Module3
                 ourAnimals[i, 2] = "Age: " + animalAge;
                 ourAnimals[i, 3] = "Nickname: " + animalNickname;
                 ourAnimals[i, 4] = "Physical description: " + animalPhysicalDescription;
-                ourAnimals[i, 5] = "Personality: " + animalPersonalityDescription;
+                ourAnimals[i, 5] = "Personality: " + animalPersonalityDescription;            
             }
 
             do
@@ -117,7 +115,7 @@ namespace ConsoleApp1.Module3
                 // pause code execution
                 //readResult = Console.ReadLine();
 
-                switch(menuSelection)
+                switch (menuSelection)
                 {
                     case "1":
                         //List All of our current pet information
@@ -274,7 +272,7 @@ namespace ConsoleApp1.Module3
                                 } while (anotherPet != "y" && anotherPet != "n");
                             }
                         }
-                                             
+
                         if (petCount >= maxPets)
                         {
                             Console.WriteLine("We have reached our limit on the number of pets that we can manage.");
@@ -283,7 +281,7 @@ namespace ConsoleApp1.Module3
                         }
 
                         break;
-                             
+
                     case "3":
                         Console.WriteLine("Challenge Project - please check back soon to see progress.");
                         Console.WriteLine("Press the Enter key to continue.");
