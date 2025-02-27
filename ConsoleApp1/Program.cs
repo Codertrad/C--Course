@@ -65,7 +65,10 @@ namespace ConsoleApp1
             //FormatCharacters.RunFormatNumbers();
 
             // MODULO 4: METODOS DE CADENA INTEGRADOS
-            StringMethods.RunStringMethods();
+            //StringMethods.RunStringMethods();
+
+            // MODULO 4: PROYECTO GUIADO - Aplicacion de mascotas
+            ContosoApp.RunApp();
         }
     }
 }

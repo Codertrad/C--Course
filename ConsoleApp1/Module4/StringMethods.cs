@@ -171,12 +171,12 @@ namespace ConsoleApp1.Module4
             string closeTagDiv = "</div>";
 
             // Extract Only Quantity 
-            int openingPosition = input.IndexOf(openTagSpan);
-            openingPosition += 6;
+            int openingPosition = input.IndexOf(openTagSpan) + openTagSpan.Length;
             int closingPosition = input.IndexOf(closeTagSpan);
             int lenghtQuantity = closingPosition - openingPosition;
 
             quantity = input.Substring(openingPosition, lenghtQuantity);
+
             // Remove <div> Tag
             int openDivPosition = input.IndexOf(openTagDiv);
             openDivPosition += 5;
