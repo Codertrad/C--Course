@@ -206,15 +206,25 @@ namespace ConsoleApp1.Module5
             string[] rsvps = new string[10];
             int count = 0;
 
-            RSVP("Rebecca", 1, "none", true);
+            // Parametros opcionales, si no se envia el argumento se coloca un valor por defecto
+            RSVP("Rebecca");
             RSVP("Nadia", 2, "Nuts", true);
-            RSVP("Linh", 2, "none", false);
+
+            //ARGUMENTOS CON NOMBRE: 
+            /* Al llamar a un método que acepta muchos parámetros, puede resultar complicado comprender 
+               lo que representan los argumentos. El uso de argumentos con nombre puede mejorar la legibilidad 
+               del código. Para usar argumentos con nombre, especifique el nombre del parámetro seguido del 
+               valor del argumento. En esta tarea, practicará el uso de argumentos con nombre.
+            */
+            RSVP(name: "Linh", partySize: 2, allergies: "none", inviteOnly: false);
             RSVP("Tony", 1, "Jackfruit", true);
             RSVP("Noor", 4, "none", false);
-            RSVP("Jonte", 2, "Stone fruit", false);
+            // ARGUMENTOS CON NOMBRE: La posicion no afecta desde que tenga el nombre, si no esta nombrado y
+            // se coloca en una posicion diferente aparecera un error
+            RSVP("Tony", inviteOnly: true, allergies: "Jackfruit", partySize: 1);
             ShowRSVPs();
 
-            void RSVP(string name, int partySize, string allergies, bool inviteOnly)
+            void RSVP(string name, int partySize = 1, string allergies = "none", bool inviteOnly = true)
             {
                 if (inviteOnly)
                 {
@@ -249,6 +259,83 @@ namespace ConsoleApp1.Module5
                     Console.WriteLine(rsvps[i]);
                 }
             }
+
+            Console.WriteLine("-----------------------------------------------------------");
+
+            // EJERCICIO: Completar el desafio para mostrar direcciones de correo electronico
+
+            /* El desafio consiste en crear un metodo que muestre la direccion de correo electronico
+               correcta de los empleados internos y externos. Se le proporcionan listas de nombres
+               de empleados internos y externos. La direccion de correo electronico de un empleado consta
+               de su nombre de usuario y nombre de dominio de la empresa
+
+               El formato del nombre de usuario esta formado por los dos primeros caracteres del nombre del 
+               empleado seguido de su apellido. Por ejemplo, un empleado llamado "Robert Bavin" tendria
+               como nombre de usuario "robavin". El dominio de los empleados internos es "contoso.com"                          
+            */
+
+            // PSEUDOCODIGO
+            /* 1. Mostrar direccion de correo: empleados internos y externos
+               2. El correo tiene la siguiente estructura:
+                        - 2 Primeros caracteres del nombre
+                        - apellido
+                        - dominio de empresa
+               
+               if empleados internos dominio: contoso.com
+                        output: juhernandez@contoso.com
+                
+               else empleados externos: parametro opcional para el dominio de empleados externos
+
+               output:
+            
+               robavin@contoso.com
+               sibright@contoso.com
+               kisinclair@contoso.com
+               aakamath@contoso.com
+               sadelucchi@contoso.com
+               siali@contoso.com
+               viashton@hayworth.com
+               codysart@hayworth.com
+               shlawrence@hayworth.com
+               davaldes@hayworth.com
+             */
+
+            string[,] corporate =
+            {
+                {"Robert", "Bavin"}, {"Simon", "Bright"},
+                {"Kim", "Sinclair"}, {"Aashrita", "Kamath"},
+                {"Sarah", "Delucchi"}, {"Sinan", "Ali"}
+            };
+
+            string[,] external =
+            {
+                {"Vinnie", "Ashton"}, {"Cody", "Dysart"},
+                {"Shay", "Lawrence"}, {"Daren", "Valdes"}
+            };
+
+            string externalDomain = "hayworth.com";
+
+
+            ListEmployee(corporate);
+            ListEmployee(external, externalDomain);
+
+            void ListEmployee(string[,] employees, string domain = "contoso.com")
+            {                
+                for (int i = 0; i < employees.GetLength(0); i++)
+                {
+                    string name = employees[i, 0].Remove(2);
+                    string lastName = employees[i, 1];
+                    string message = $"{name}{lastName}@{domain}".ToLower();
+
+                    Console.WriteLine(message);
+                }
+            }
+
+
+            /*for (int i = 0; i < external.GetLength(0); i++)
+            {
+                // display external email addresses
+            }*/
         }
     }
 }
