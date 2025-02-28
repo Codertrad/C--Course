@@ -3,6 +3,7 @@ using ConsoleApp1.Module1;
 using ConsoleApp1.Module2;
 using ConsoleApp1.Module3;
 using ConsoleApp1.Module4;
+using ConsoleApp1.Module5;
 
 namespace ConsoleApp1
 {
@@ -68,7 +69,16 @@ namespace ConsoleApp1
             //StringMethods.RunStringMethods();
 
             // MODULO 4: PROYECTO GUIADO - Aplicacion de mascotas
-            ContosoApp.RunApp();
+            //ContosoApp.RunApp();
+
+            // MODULO 5: Creacion de metodos en aplicaciones de consola
+            //CreateMethods.RunCreateMethods();
+
+            // MODULO 5: Creacion de un metodo reutilizable
+            //ExerciseReusableMethod.RunExercise();
+
+            // MODULO 5: Metodos con parametros
+            MethodsWithParams.RunMethodsWhithParams();
         }
     }
 }
