@@ -329,13 +329,7 @@ namespace ConsoleApp1.Module5
 
                     Console.WriteLine(message);
                 }
-            }
-
-
-            /*for (int i = 0; i < external.GetLength(0); i++)
-            {
-                // display external email addresses
-            }*/
+            }            
         }
     }
 }

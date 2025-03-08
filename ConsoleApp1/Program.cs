@@ -78,7 +78,16 @@ namespace ConsoleApp1
             //ExerciseReusableMethod.RunExercise();
 
             // MODULO 5: Metodos con parametros
-            MethodsWithParams.RunMethodsWhithParams();
+            //MethodsWithParams.RunMethodsWhithParams();
+
+            //MODULO 5: Metodos que devuelven valores
+            //ReturnMethods.RunReturnMethods();
+
+            //MODULO 5: Desafio "Minijuego Dados"
+            //GuidedProject.RunGuidedProject();
+
+            //MODULO 5: Proyecto guiado AppZoo
+            AppZoo.RunApp();
         }
     }
 }
