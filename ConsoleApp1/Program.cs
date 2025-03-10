@@ -87,7 +87,10 @@ namespace ConsoleApp1
             //GuidedProject.RunGuidedProject();
 
             //MODULO 5: Proyecto guiado AppZoo
-            AppZoo.RunApp();
+            //AppZoo.RunApp();
+
+            // MODULO 5: Desafio Creacion de un minijuego
+            MinigameApp.RunMinigameApp();
         }
     }
 }
