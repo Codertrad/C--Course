@@ -4,6 +4,7 @@ using ConsoleApp1.Module2;
 using ConsoleApp1.Module3;
 using ConsoleApp1.Module4;
 using ConsoleApp1.Module5;
+using ConsoleApp1.Module6;
 
 namespace ConsoleApp1
 {
@@ -90,7 +91,12 @@ namespace ConsoleApp1
             //AppZoo.RunApp();
 
             // MODULO 5: Desafio Creacion de un minijuego
-            MinigameApp.RunMinigameApp();
+            //MinigameApp.RunMinigameApp();
+
+            // MODULO 6: Programacion orientada a objetos (POO)
+            PropsAndClassMethods.RunApp();
+
+            // MODULO 6: Examen de propiedades implementadas automaticamente
         }
     }
 }
