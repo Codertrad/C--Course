@@ -94,9 +94,13 @@ namespace ConsoleApp1
             //MinigameApp.RunMinigameApp();
 
             // MODULO 6: Programacion orientada a objetos (POO)
-            PropsAndClassMethods.RunApp();
+            //PropsAndClassMethods.RunApp();
 
             // MODULO 6: Examen de propiedades implementadas automaticamente
+            //PropsExam.RunPropsExam();
+
+            // MODULO 6: Restringir el acceso a las propiedades
+            RestrictAccessProps.RunRestrictProps();
         }
     }
 }
