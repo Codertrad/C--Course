@@ -100,7 +100,10 @@ namespace ConsoleApp1
             //PropsExam.RunPropsExam();
 
             // MODULO 6: Restringir el acceso a las propiedades
-            RestrictAccessProps.RunRestrictProps();
+            //RestrictAccessProps.RunRestrictProps();
+
+            // MODULO 6: Implementacion de metodos y parametros de clase
+            //ImplementMethodsAndParams.RunApp();
         }
     }
 }
